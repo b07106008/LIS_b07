@@ -48,11 +48,11 @@
 			            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
 			                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
 			                <li class=" smooth-menu active"></li>
-                            <li class="smooth-menu"><a href="../html/motherday.html">mother's day</a></li>
-                            <li class="smooth-menu"><a href="../html/fatherday.html">father's day</a></li>
-                            <li class="smooth-menu"><a href="../html/christmas.html">christmas/a></li>
-                            <li class="smooth-menu"><a href="../html/birthday.html">birthday</a></li>
-                            <li class="smooth-menu"><a href="../html/babybirth.html">full month gift</a></li>
+                                <li class="smooth-menu"><a href="../html/motherday.html">mother's day</a></li>
+                                <li class="smooth-menu"><a href="../html/fatherday.html">father's day</a></li>
+                                <li class="smooth-menu"><a href="../html/christmas.html">christmas</a></li>
+			                    <li class="smooth-menu"><a href="../html/birthday.html">birthday</a></li>
+                                <li class="smooth-menu"><a href="../html/babybirth.html">full month gift</a></li>
 			                </ul><!--/.nav -->
 			            </div><!-- /.navbar-collapse -->
                 <!-- End Header Navigation-->
@@ -83,7 +83,7 @@
                 <option value="801~1000">801~1000</option>
                 <option value="1001~1500">1001~1500</option>
                 <option value="1501~2000">1501~2000</option>
-                <option value="2001以上">2001以上</option>
+                <option value="2000以上">2000以上</option>
             </select>
         </div>
     
@@ -94,7 +94,7 @@
     <!-- Filter End -->
 
     <!-- Listing Section Begin -->
-      <section class="listing">
+    <section class="listing">
             <div class="listing__text__top">
                 <div class="listing__text__top__left">
                     <h5>為您準備的禮物指南!</h5>
@@ -449,8 +449,26 @@
 <!-- filter js-->
 <script>
     var num = 0;
-    var gift_list = [{item:'造型保暖室內拖鞋', gender:'不限', budget:'200~400', img: '../img/christmas/slippers.jpg'}, {item:'口紅', gender:'女', budget:'200以下', img:'../img/christmas/lipstick.jpg'},
-    {item:'手機殼', gender:'不限', budget:'200~400', img:'../img/christmas/phone_case.jpg'},{item:'指甲油', gender:'女', budget:'200以下', img:'../img/christmas/nail_polish.jpg'},{item:'棒球帽', gender:'男', budget:'200以下', img:'../img/christmas/cap.jpg'}];
+    var gift_list = [
+        {item:'藍芽耳機', gender:'不限', budget:'2000以上', img: '../img/anniversary/air_pods.jpg'},
+        {item:'藍芽音響', gender:'不限', budget:'2000以上', img:'../img/anniversary/speaker.jpg'},
+        {item:'手作卡片', gender:'不限', budget:'200以下', img:'../img/anniversary/card.jpg'},
+        {item:'眼影', gender:'女', budget:'401~600', img:'../img/anniversary/eye-shadow.jpg'}, 
+        {item:'對戒', gender:'不限', budget:'2000以上', img:'../img/anniversary/ring.jpg'},
+        {item:'客製化手表', gender:'男', budget:'2000以上', img:'../img/anniversary/watch.jpg'},
+        {item:'巧克力', gender:'不限', budget:'200~400', img:'../img/anniversary/chocolate.jpg'},
+        {item:'香水', gender:'不限', budget:'2000以上', img:'../img/anniversary/perfume.jpg'},
+        {item:'情侶帽', gender:'不限', budget:'200以下', img:'../img/christmas/cap.jpg'}, 
+        {item:'玩偶', gender:'女', budget:'401~600', img:'../img/christmas/doll.jpg'}, 
+        {item:'乾燥花', gender:'女', budget:'401~600', img:'../img/anniversary/flower.jpg'},
+        {item:'情侶襪', gender:'不限', budget:'200以下', img:'../img/anniversary/socks.jpg'},
+        {item:'短夾', gender:'男', budget:'601~800', img:'../img/anniversary/wallet.jpg'},
+        {item:'袖扣', gender:'男', budget:'601~800', img:'../img/anniversary/cufflinks.jpg'},
+        {item:'補光燈', gender:'女', budget:'200以下', img:'../img/anniversary/light.jpg'},
+        {item:'鑰匙圈', gender:'不限', budget:'200以下', img:'../img/anniversary/key_ring.jpg'},
+        {item:'銅釦皮帶', gender:'男', budget:'801~1000', img: '../img/christmas/belt.jpg'}, 
+        {item:'手作蛋糕', gender:'不限', budget:'601~800', img: '../img/anniversary/cake.jpg'}, 
+        ];
     //傳入預設
     operation(2);
 
