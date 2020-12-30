@@ -69,12 +69,6 @@
             <h5>Filter</h5>
         </div>
         <div class="filter__select">
-            <select id="gender">
-                <option value="">Gender</option>
-                <option value="女">女</option>
-                <option value="男">男</option>
-                <option value="不限">不限</option>
-            </select>
             <select id="budget">
                 <option value="">Budget</option>
                 <option value="200以下">200以下</option>
@@ -399,16 +393,15 @@
             processFromData();
         }
         else{
-            filter_gift('','');
+            filter_gift('');
             return;
         }  
     }
 
    //匯入篩選條件
     function processFromData(){
-        var gender = document.getElementById('gender').value;
         var budget = document.getElementById('budget').value;
-        filter_gift(gender, budget);
+        filter_gift(budget);
     }
 
     //輸出function
@@ -448,28 +441,15 @@
     }
 
     //filter function
-    function filter_gift(gender, budget){
+    function filter_gift(budget){
         var filterResult = gift_list.filter(function(gift){
-            if(gender === '不限' || gender === ''){
-                if(budget === '')
-                    return gift;
-                else{
-                    if(gift.budget === budget)
-                        return gift;
-                }
-            }
+            if(budget === '')
+                return gift;
             else{
-                if(budget === ''){
-                    if(gift.gender === gender || gift.gender === '不限')
-                        return gift;
-                }
-                else{
-                    if(gift.gender === gender && gift.budget === budget)
-                        return gift;
-                    else if(gift.gender === '不限' && gift.budget === budget)
-                        return gift;
-                }
+                if(gift.budget === budget)
+                    return gift;
             }
+            
         });
         print_to_browser(filterResult);
     }
