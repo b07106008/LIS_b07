@@ -613,6 +613,7 @@ html,body{
 	flex: 0 0 50%;
 	width: 100%;
 	height: 100%;
+	background-color: rgba(37, 112, 53, 0.384);
 }
 
 .listing__item {
@@ -627,8 +628,8 @@ html,body{
 }
 
 .listing__item__pic img {
-	height: 200px;
-	width: 200px;
+	height: 180px;
+	width: 230px;
 	top: calc(50%-25px);
 	left: calc(50%-25px);
 	position: absolute;
@@ -637,9 +638,10 @@ html,body{
 }
 
 .listing__item__pic__tag {
-	font-size: 12px;
+	font-size: 15px;
 	color: #ffffff;
-	background: #f03250;
+	height: 30px;
+	background: #b42020;
 	font-weight: 600;
 	display: inline-block;
 	padding: 5px 15px 5px 10px;
@@ -656,10 +658,11 @@ html,body{
 }
 
 .listing__item__text__inside h1 {
-	font-size: 20px;
+	font-size: 24px;
 	color: #323232;
 	font-weight: 600;
 	margin-bottom: 6px;
+	font-family: 'Microsoft YaHei';
 }
 
 .listing__item__text__rating {
@@ -689,7 +692,7 @@ html,body{
 .listing__item__text__info__left img {
 	display: inline-block;
 	margin-right: 10px;
-	width: 34px;
+	width: 42px;
 	height: 34px;
 	border-radius: 50%;
 }
@@ -699,9 +702,6 @@ html,body{
 	color: #323232;
 	font-weight: 600;
 }
-
-
-
 
 
 /*========== GiftDay.html End ============*/
